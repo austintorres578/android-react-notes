@@ -18,7 +18,7 @@ export default function NoteCreationTextArea(props){
 
     return(
         <div className="note-creation-text-area">
-            <textarea onChange={handleNoteChange}></textarea>
+            <textarea onChange={handleNoteChange} required></textarea>
             <Link to="/"><button onClick={props.saveNote}>Save</button></Link>
         </div>
     )

@@ -27,10 +27,8 @@ export default function NoteCreationTitle(props){
         <div className="note-creation-title-container">
             <div className="note-creation-title">
                 <Link to="/"><button><img src={backIcon}></img></button></Link>
-                <form>
-                    <input name="title" onChange={handleTitleChange} placeholder="Title"></input>
+                    <input name="title" onChange={handleTitleChange} placeholder="Title" required></input>
                     <button></button>
-                </form>
                 <button><img src={editIcon}></img></button>
                 <button><img src={searchIcon}></img></button>
                 <button><img src={settingIcon}></img></button>
