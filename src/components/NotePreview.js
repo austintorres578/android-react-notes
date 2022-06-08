@@ -1,4 +1,5 @@
 import React from "react";
+import trash from "../images/trash.png"
 
 export default function NotePreview(props){
     return(
@@ -9,6 +10,9 @@ export default function NotePreview(props){
             <div className="note-preview-subtitle">
                 <p className="note-title">{props.title}</p>
                 <p className="note-date">{props.date}</p>
+                <div className="note-button">
+                    <button><img src={trash}></img></button>
+                </div>
             </div>
         </div>
     )

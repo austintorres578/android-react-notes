@@ -30,6 +30,11 @@ body{
 }
 .note-preview-container{
     width: fit-content;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.note-preview-container:hover .note-preview-subtitle .note-button{
+    display: block;
 }
 .note-preview{
     background-color: rgb(30, 30, 30);
@@ -38,8 +43,6 @@ body{
     height: 125px;
     width: 100px;
     margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 .note-preview p{
     margin: 0px;
@@ -54,11 +57,30 @@ body{
     margin-bottom: 20px;
 }
 .note-title{
+    text-align: center;
+    overflow-wrap: break-word;
+    width: 130px;
+    max-height: 45px;
+    overflow-y: hidden;
     margin: 0px;
     font-weight: bold;
 }
 .note-date{
     margin: 0px;
+}
+.note-button{
+    display: none;
+    transition: .5s;
+    text-align: center;
+}
+.note-button button{
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.note-button img{
+    height: 40px;
+    width: auto;
 }
 .note-creation-title{
     display: flex;

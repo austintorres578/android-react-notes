@@ -1,10 +1,3 @@
-Clone React Notes 
-
-This website is to help me reinforce react concepts and improve upon a previous planner I made with Vanilla javascript. 
-
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
