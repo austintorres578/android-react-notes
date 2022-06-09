@@ -14,8 +14,6 @@ export default function NoteCreationTextArea(props){
 
     }
 
-    console.log(props.currentNote)
-
     return(
         <div className="note-creation-text-area">
             <textarea onChange={handleNoteChange} required></textarea>

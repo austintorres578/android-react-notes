@@ -4,6 +4,8 @@ import NoteCreationTitle from "./NoteCreationTitle";
 
 export default function NoteCreationSection(){
 
+
+
     let d = new Date();
 
     const [currentNote, setCurrentNote] = useState({

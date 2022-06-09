@@ -20,8 +20,6 @@ export default function NoteCreationTitle(props){
 
     }
 
-    console.log(props.currentNote)
-
 
     return(
         <div className="note-creation-title-container">

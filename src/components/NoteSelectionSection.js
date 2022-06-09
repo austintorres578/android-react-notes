@@ -33,10 +33,12 @@ let deleteNote = (event) => {
   deletedNote.date=noteDiv.parentNode.children[1].children[1].innerHTML
   deletedNote.note=noteDiv.parentNode.children[0].children[0].innerHTML
 
-  let newNotesArray = savedNotes.filter(note => note.title != deletedNote.title && note.note != deletedNote.note && note.date != deletedNote.date)
+  let newNotesArray = savedNotes.filter(note => note.title != deletedNote.title && note.note != deletedNote.note)
 
   localStorage.setItem("savedNotes",JSON.stringify(newNotesArray))
   setSavedNotes(JSON.parse(localStorage.getItem("savedNotes")))
+
+  console.log(deletedNote)
 
   console.log(newNotesArray)
 }
